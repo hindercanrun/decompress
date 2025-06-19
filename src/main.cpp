@@ -22,9 +22,9 @@ int decompress_ff(const std::string& file_name) {
     std::cerr << yellow << "failed to open file." << clear;
     return 1;
   }
+
   // skip the header
   file.seekg(12, std::ios::beg); // adjust to your needs
-
   std::vector<uint8_t> compressed(
     (std::istreambuf_iterator<char>(file)),
     (std::istreambuf_iterator<char>()));
