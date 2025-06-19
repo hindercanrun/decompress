@@ -1,0 +1,6 @@
+# Visual Studio
+.vs/
+*.aps
+
+# build results
+build
